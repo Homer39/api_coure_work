@@ -1,18 +1,18 @@
 import requests
-from src.abstract import Vacancy
+from src.entities.abstract import Api
+from src.entities.vacancy import Vacancy
 
 
 class VacancyError(Exception):
     pass
 
 
-class HeadHunterAPI(Vacancy):
+class HeadHunterAPI(Api):
 
     def __init__(self, keyword: str) -> None:
         self.__params = {'text': f'NAME: {keyword}',
-                         'area': 113,
                          'page': 0,
-                         'per_page': 20}
+                         'per_page': 100}
 
     def get_vacancy(self) -> list:
         """
@@ -38,23 +38,25 @@ class HeadHunterAPI(Vacancy):
         """
         Парсит данные для пользователя
         """
-        pars_vac = []
+        vacansies = []
         for vac in vac_list:
             salary_from, salary_to, currency = self.get_salary(vac['salary'])
-            pars_vac.append({'id': vac['id'],
-                             'title': vac['name'],
-                             'url': vac['alternate_url'],
-                             'salary_from': salary_from,
-                             'salary_to': salary_to,
-                             'currency': currency,
-                             'employer': vac['employer']['name']})
-        return pars_vac
+            vacancy = Vacancy(vac['id'],
+                              vac['name'],
+                              vac['alternate_url'],
+                              salary_from,
+                              salary_to,
+                              currency,
+                              vac['employer']['name'],
+                              'hh')
+            vacansies.append(vacancy)
+        return vacansies
 
     def get_salary(self, salary: dict) -> list:
         """
         Преобразовывает в нужный вид параметр salary
         """
-        new_salary = [None, None, None]
+        new_salary = [0, 0, None]
         if salary and salary['from']:
             new_salary[0] = salary['from']
             new_salary[2] = salary['currency']
@@ -63,5 +65,3 @@ class HeadHunterAPI(Vacancy):
         return new_salary
 
 
-hh_vac = HeadHunterAPI('Python')
-print(hh_vac.get_vacancy())

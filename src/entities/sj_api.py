@@ -1,5 +1,6 @@
 import requests
-from src.abstract import Vacancy
+from src.entities.abstract import Api
+from src.entities.vacancy import Vacancy
 import os
 
 
@@ -7,18 +8,18 @@ class VacancyError(Exception):
     pass
 
 
-class SuperJobAPI(Vacancy):
+class SuperJobAPI(Api):
     api_key = os.getenv('API_KEY_Super_Job')
 
-    def __init__(self, keyword):
+    def __init__(self, keyword: str) -> None:
         self.__params = {'keywords': {keyword},
                          'town': 'Москва',
                          'sort_new (unixtime)': 1,
                          'page': 1,
-                         'count': 20}
+                         'count': 5}
         self.__vacancies = []
 
-    def get_requests(self):
+    def get_requests(self) -> list:
         """
         Выполняет запрос по заданным параметрам
         """
@@ -28,7 +29,7 @@ class SuperJobAPI(Vacancy):
             raise VacancyError('Oшибка данных')
         return response.json()['objects']
 
-    def get_vacancy(self):
+    def get_vacancy(self) -> list:
         """
         Получает список вакансий
         """
@@ -37,10 +38,22 @@ class SuperJobAPI(Vacancy):
         except VacancyError:
             print('Oшибка данных')
         else:
-            self.__vacancies.extend(vac_list)
-            print(f'Количество вакансий - {len(self.__vacancies)}')
-            print(self.__vacancies)
+            return self.parsing(vac_list)
 
+    def parsing(self, vac_list: list) -> list:
+        """
+        Парсит данные для пользователя
+        """
+        vacansies = []
+        for vac in vac_list:
+            vacancy = Vacancy(vac['id'],
+                              vac['profession'],
+                              vac['link'],
+                              vac['payment_from'],
+                              vac['payment_to'],
+                              vac['currency'],
+                              vac['firm_name'],
+                              'SuperJob')
+            vacansies.append(vacancy)
+        return vacansies
 
-Sj_vac = SuperJobAPI('Python')
-Sj_vac.get_vacancy()
