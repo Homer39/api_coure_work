@@ -1,0 +1,182 @@
+[
+    {
+        "id": "79148815",
+        "title": "Системный администратор / HelpDesk",
+        "url": "https://hh.ru/vacancy/79148815",
+        "salary_from": 2000,
+        "salary_to": 0,
+        "currency": "BYR",
+        "employer": "Единые Решения",
+        "api": "hh"
+    },
+    {
+        "id": "80614862",
+        "title": "Middle Data Scientist (Python)",
+        "url": "https://hh.ru/vacancy/80614862",
+        "salary_from": 0,
+        "salary_to": 0,
+        "currency": null,
+        "employer": "WaveAccess",
+        "api": "hh"
+    },
+    {
+        "id": "80827238",
+        "title": "Инженер технической поддержки/системный администратор",
+        "url": "https://hh.ru/vacancy/80827238",
+        "salary_from": 70000,
+        "salary_to": 90000,
+        "currency": "RUR",
+        "employer": "NeoCommunications",
+        "api": "hh"
+    },
+    {
+        "id": "79446144",
+        "title": "Data Analyst of internal data sets",
+        "url": "https://hh.ru/vacancy/79446144",
+        "salary_from": 2000,
+        "salary_to": 3200,
+        "currency": "USD",
+        "employer": "Rent Ready",
+        "api": "hh"
+    },
+    {
+        "id": "80669103",
+        "title": "DSP software engineer (Armenia)",
+        "url": "https://hh.ru/vacancy/80669103",
+        "salary_from": 0,
+        "salary_to": 0,
+        "currency": null,
+        "employer": "maro.am",
+        "api": "hh"
+    },
+    {
+        "id": "80859405",
+        "title": "Администратор Linux",
+        "url": "https://hh.ru/vacancy/80859405",
+        "salary_from": 0,
+        "salary_to": 0,
+        "currency": null,
+        "employer": "Холдинг «Аэропорты Регионов»",
+        "api": "hh"
+    },
+    {
+        "id": "80669104",
+        "title": "DSP software engineer (Armenia)",
+        "url": "https://hh.ru/vacancy/80669104",
+        "salary_from": 0,
+        "salary_to": 0,
+        "currency": null,
+        "employer": "maro.am",
+        "api": "hh"
+    },
+    {
+        "id": "80652805",
+        "title": "Архитектор Сommon services (VK Cloud)",
+        "url": "https://hh.ru/vacancy/80652805",
+        "salary_from": 0,
+        "salary_to": 0,
+        "currency": null,
+        "employer": "VK",
+        "api": "hh"
+    },
+    {
+        "id": "80669102",
+        "title": "DSP software engineer (Armenia)",
+        "url": "https://hh.ru/vacancy/80669102",
+        "salary_from": 0,
+        "salary_to": 0,
+        "currency": null,
+        "employer": "maro.am",
+        "api": "hh"
+    },
+    {
+        "id": "80669105",
+        "title": "DSP software engineer (Armenia)",
+        "url": "https://hh.ru/vacancy/80669105",
+        "salary_from": 0,
+        "salary_to": 0,
+        "currency": null,
+        "employer": "maro.am",
+        "api": "hh"
+    },
+    {
+        "id": "76819153",
+        "title": "System engineer / Kubernetes Developer",
+        "url": "https://hh.ru/vacancy/76819153",
+        "salary_from": 5500,
+        "salary_to": 0,
+        "currency": "USD",
+        "employer": "NetworkOptix",
+        "api": "hh"
+    },
+    {
+        "id": "80669106",
+        "title": "DSP software engineer (Armenia)",
+        "url": "https://hh.ru/vacancy/80669106",
+        "salary_from": 0,
+        "salary_to": 0,
+        "currency": null,
+        "employer": "maro.am",
+        "api": "hh"
+    },
+    {
+        "id": "80011433",
+        "title": "Build engineer (С++/CMake)",
+        "url": "https://hh.ru/vacancy/80011433",
+        "salary_from": 5000,
+        "salary_to": 0,
+        "currency": "USD",
+        "employer": "NetworkOptix",
+        "api": "hh"
+    },
+    {
+        "id": 39820624,
+        "title": "Специалист службы поддержки с техническими знаниями (Браузер)",
+        "url": "https://www.superjob.ru/vakansii/specialist-sluzhby-podderzhki-s-tehnicheskimi-znaniyami-39820624.html",
+        "salary_from": 15000,
+        "salary_to": 0,
+        "currency": "rub",
+        "employer": "Яндекс",
+        "api": "SuperJob"
+    },
+    {
+        "id": 46189523,
+        "title": "Middle Data / ML Engineer (персонализация)",
+        "url": "https://www.superjob.ru/vakansii/middle-data-46189523.html",
+        "salary_from": 0,
+        "salary_to": 0,
+        "currency": "rub",
+        "employer": "Спортмастер",
+        "api": "SuperJob"
+    },
+    {
+        "id": 45812126,
+        "title": "Аналитик",
+        "url": "https://www.superjob.ru/vakansii/analitik-45812126.html",
+        "salary_from": 150000,
+        "salary_to": 0,
+        "currency": "rub",
+        "employer": "Альпинтех",
+        "api": "SuperJob"
+    },
+    {
+        "id": 43473088,
+        "title": "Учитель информатики и программирования в рейтинговую школу",
+        "url": "https://www.superjob.ru/vakansii/uchitel-informatiki-i-programmirovaniya-v-rejtingovuyu-shkolu-43473088.html",
+        "salary_from": 80000,
+        "salary_to": 100000,
+        "currency": "rub",
+        "employer": "Школа 1514. Кафедра информатики",
+        "api": "SuperJob"
+    },
+    {
+        "id": 46400350,
+        "title": "Аналитик отдела продаж",
+        "url": "https://www.superjob.ru/vakansii/analitik-otdela-prodazh-46400350.html",
+        "salary_from": 0,
+        "salary_to": 0,
+        "currency": "rub",
+        "employer": "SuperJob",
+        "api": "SuperJob"
+    }
+]
